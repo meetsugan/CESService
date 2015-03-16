@@ -1,11 +1,11 @@
 package org.huit.ces.model;
 
-public class User {
+public class User extends BaseModel{
 
 	private String harvardID;
 	private String title;
 	private String courseRole;
-	private String courseID;
+	private long courseID;
 	
 	public String getHarvardID() {
 		return harvardID;
@@ -25,13 +25,10 @@ public class User {
 	public void setCourseRole(String courseRole) {
 		this.courseRole = courseRole;
 	}
-	public String getCourseID() {
+	public long getCourseID() {
 		return courseID;
 	}
-	public void setCourseID(String courseID) {
+	public void setCourseID(long courseID) {
 		this.courseID = courseID;
 	}
-	
-	
-	
 }
